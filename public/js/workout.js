@@ -6,6 +6,7 @@ $(document).ready(function() {
   // Adding event listeners to the form to create a new object, and the button to delete
   // an workout
   $(document).on("submit", "#workout-form", handleworkoutFormSubmit);
+  $(document).on("add", "#workout-form", handleworkoutFormAdd);
   $(document).on("click", ".delete-workout", handleDeleteButtonPress);
 
   // Getting the intiial list of workouts
@@ -13,6 +14,21 @@ $(document).ready(function() {
 
   // A function to handle what happens when the form is submitted to create a new workout
   function handleworkoutFormSubmit(event) {
+    event.preventDefault();
+    // Don't do anything if the name fields hasn't been filled out
+    if (!nameInput.val().trim().trim()) {
+      return;
+    }
+    // Calling the upsertworkout function and passing in the value of the name input
+    upsertworkout({
+      name: nameInput
+        .val()
+        .trim()
+    });
+  }
+
+    // A function to handle what happens when the form is submitted to create a new workout and add another workout
+  function handleworkoutFormAdd(event) {
     event.preventDefault();
     // Don't do anything if the name fields hasn't been filled out
     if (!nameInput.val().trim().trim()) {
@@ -39,7 +55,7 @@ $(document).ready(function() {
     newTr.append("<td>" + workoutData.name + "</td>");
     newTr.append("<td> " + workoutData.Posts.length + "</td>");
     newTr.append("<td><a href='/workout?workout_id=" + workoutData.id + "'>Go to Workout</a></td>");
-    newTr.append("<td><a href='/cms?workout_id=" + workoutData.id + "'>Create a Workout</a></td>");
+    newTr.append("<td><a href='/cms?workout_id=" + workoutData.id + "'>Create Exercise</a></td>");
     newTr.append("<td><a style='cursor:pointer;color:red' class='delete-workout'>Delete workout</a></td>");
     return newTr;
   }
