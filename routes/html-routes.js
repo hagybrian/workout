@@ -3,9 +3,9 @@ var path = require("path");
 
 // Routes
 module.exports = function(app) {
-  // index route loads view.html
+  // index route loads index.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/workouts.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
   // cms route loads cms.html
@@ -21,6 +21,11 @@ module.exports = function(app) {
   // workouts route loads workout-manager.html
   app.get("/workouts", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/workouts-manager.html"));
+  });
+
+  // workouts route loads workout-manager.html
+  app.get("/data", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/data.html"));
   });
 
 };
