@@ -77,7 +77,6 @@ $(document).ready(function() {
     workoutList.children().not(":last").remove();
     workoutContainer.children(".alert").remove();
     if (rows.length) {
-      console.log(rows);
       workoutList.prepend(rows);
     }
     else {

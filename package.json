@@ -12,6 +12,7 @@
   "Author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.17.1",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "mysql": "^2.15.0",
@@ -21,6 +22,7 @@
     "sequelize": "^4.33.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0"
   }
 }
