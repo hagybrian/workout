@@ -17,7 +17,7 @@ button.edit {
 }
 
 .workout-container {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .workout-list {
@@ -48,4 +48,7 @@ button.edit {
 
 .top-20 {
   margin-top: 20px;
+}
+.navbar {
+  height: 50px;
 }
