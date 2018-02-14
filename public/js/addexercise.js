@@ -9,10 +9,10 @@ $(document).ready(function() {
   var repsInput = $("#reps");
   var tempoInput = $("#tempo");
   var restInput = $("#rest");
-  var cmsForm = $("#cms");
+  var addexerciseForm = $("#addexercise");
   var workoutselect = $("#workout");
   // Adding an event listener for when the form is submitted
-  $(cmsForm).on("submit", handleFormSubmit);
+  $(addexerciseForm).on("submit", handleFormSubmit);
   // Gets the part of the url that comes after the "?" (which we have if we're updating a post)
   var url = window.location.search;
   var postId;

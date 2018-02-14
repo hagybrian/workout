@@ -132,7 +132,7 @@ $(document).ready(function() {
       .parent()
       .parent()
       .data("post");
-    window.location.href = "/cms?post_id=" + currentPost.id;
+    window.location.href = "/addexercise?post_id=" + currentPost.id;
   }
 
   // This function displays a messgae when there are no posts
@@ -145,7 +145,7 @@ $(document).ready(function() {
     workoutsContainer.empty();
     var messageh2 = $("<h2>");
     messageh2.css({ "text-align": "center", "margin-top": "50px" });
-    messageh2.html("No exersizes yet" + partial + ", navigate <a href='/cms" + query +
+    messageh2.html("No exersizes yet" + partial + ", navigate <a href='/addexercise" + query +
     "'>here</a> in order to get started.");
     workoutsContainer.append(messageh2);
   }

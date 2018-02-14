@@ -8,9 +8,9 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
-  // cms route loads cms.html
-  app.get("/cms", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/cms.html"));
+  // addexercise route loads addexercise.html
+  app.get("/addexercise", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/addexercise.html"));
   });
 
   // workouts route loads workouts.html

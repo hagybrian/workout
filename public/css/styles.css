@@ -2,11 +2,11 @@ button.submit {
   float: left;
 }
 
-form#cms {
+form#addexercise {
   margin-top: 50px;
 }
 
-#cms textarea {
+#addexercise textarea {
   resize: none;
 }
 
