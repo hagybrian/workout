@@ -104,7 +104,7 @@ var Stopwatch = function (_React$Component) {
         this.state.secondsElapsed !== 0 && this.incrementer !== this.state.lastClearedIncrementer ? React.createElement(
           Button,
           { onClick: this.handleLabClick.bind(this) },
-          'lap'
+          // 'lap'
         ) : null,
         this.state.secondsElapsed !== 0 && this.incrementer === this.state.lastClearedIncrementer ? React.createElement(
           Button,
