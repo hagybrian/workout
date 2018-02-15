@@ -2,85 +2,76 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>workout App</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery.js"></script>
+    <meta charset="UTF-8">
+    <title>workout App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
-	<div class="container hidden">
-		<div class="row top-30">
-      <div class="col-md-2">
-        <a class="btn btn-primary" href="/workouts">Go to workout</a>
-      </div>
-  </div>
-  <div class="row top-30">
-      <div class="col-md-2">
-        <a class="btn btn-primary" href="/workouts">Manage workouts</a>
-      </div>
+    <div class="container hidden">
+        <div class="row top-30">
+            <div class="col-md-2">
+                <a class="btn btn-primary" href="/workouts">Go to workout</a>
+            </div>
+        </div>
+        <div class="row top-30">
+            <div class="col-md-2">
+                <a class="btn btn-primary" href="/workouts">Manage workouts</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form id="addexercise">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="category">Select workout:</label>
+                            <select class="form-control" id="workout">
+                            </select>
+                        </div>
+                        <br />
+                        <label for="sequence">Sequence:</label>
+                        <input placeholder="Enter Sequence" type="text" class="form-control" id="sequence">
+                        <br />
+                        <label for="exercise">Exercise:</label>
+                        <input placeholder="Enter Exercise" type="text" class="form-control" id="exercise">
+                        <br />
+                        <label for="sets">Sets:</label>
+                        <input placeholder="Enter Sets" class="form-control sets" type="number" id="sets"></input>
+                        <br />
+                        <label for="weight">Weight:</label>
+                        <input placeholder="Enter Weight" class="form-control" type="number" id="weight"></input>
+                        <br />
+                        <label for="reps">Reps:</label>
+                        <input placeholder="Enter Reps" class="form-control" type="number" id="reps"></input>
+                        <br />
+                        <label for="tempo">Tempo:</label>
+                        <input placeholder="Enter Tempo (XXXX)" class="form-control" id="tempo"></input>
+                        <br />
+                        <label for="rest">Rest:</label>
+                        <input placeholder="Enter Rest Period in Seconds" class="form-control" type="number" id="rest"></input>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <!-- <a class="btn btn-primary" href="/addexercise">Add Exercise</a> -->
+                                <button type="submit" class="btn btn-success add" href="/addexercise">Add Exercise</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-success submit">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
-				<form id="addexercise">
-					<div class="form-group">
-						<div class="form-group">
-							<label for="category">Select workout:</label>
-							<select class="form-control" id="workout">
-  						</select>
-						</div>
-						<br />
-						<label for="sequence">Sequence:</label>
-						<input placeholder="Enter Sequence" type="text" class="form-control" id="sequence">
-						<br />
-						<label for="exercise">Exercise:</label>
-						<input placeholder="Enter Exercise" type="text" class="form-control" id="exercise">
-						<br />
-						<label for="sets">Sets:</label>
-						<input placeholder="Enter Sets" class="form-control sets" type="number" id="sets"></input>
-						<br />
-						<label for="weight">Weight:</label>
-						<input placeholder="Enter Weight" class="form-control" type="number" id="weight"></input>
-						<br />
-						<label for="reps">Reps:</label>
-						<input placeholder="Enter Reps" class="form-control" type="number" id="reps"></input>
-						<br />
-						<label for="tempo">Tempo:</label>
-						<input placeholder="Enter Tempo (XXXX)" class="form-control" id="tempo"></input>
-						<br />
-						<label for="rest">Rest:</label>
-						<input placeholder="Enter Rest Period in Seconds" class="form-control" type="number" id="rest"></input>
-						<br />
-
-						<div class="row">
-
-							<div class="col-md-4">
-						<!-- <a class="btn btn-primary" href="/addexercise">Add Exercise</a> -->
-						<button type="submit" class="btn btn-success add" href="/addexercise">Add Exercise</button>
-					</div>
-
-							<div class="col-md-4">
-						        
-
-						<button type="submit" class="btn btn-success submit">Done</button>
-					</div>
-					
-
-					</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- Custom Script -->
-	<script src="js/addexercise.js" type="text/javascript"></script>
-	</script>
-
+    <!-- Custom Script -->
+    <script src="js/addexercise.js" type="text/javascript"></script>
+    </script>
 </body>
 
 </html>

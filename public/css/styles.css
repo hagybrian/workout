@@ -1,57 +1,55 @@
 button.submit {
-  float: left;
+    float: left;
 }
 
 form#addexercise {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 #addexercise textarea {
-  resize: none;
+    resize: none;
 }
 
 .panel-heading button.delete,
 button.edit {
-  float: right;
-  margin: 5px;
+    float: right;
+    margin: 5px;
 }
 
 .workout-container {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .workout-list {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
 .workouts-container {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .workouts {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 #workout-name {
-  width: 100%;
-  height: 35px;
-  margin-top: 5px;
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
 }
 
 .top-30 {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .top-20 {
-  margin-top: 20px;
+    margin-top: 20px;
 }
+
 .navbar {
-  height: 50px;
+    height: 50px;
 }
-
-
-
