@@ -1,5 +1,3 @@
-
-
 const formattedSeconds = (sec) =>
   Math.floor(sec / 60) +
     ':' +
