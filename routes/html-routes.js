@@ -1,4 +1,4 @@
-// Dependencies
+// Requiring path to so we can use relative routes to our HTML files
 var path = require("path");
 
 // Requiring our custom middleware for checking if a user is logged in
@@ -29,29 +29,28 @@ module.exports = function(app) {
   });
 
     // index route loads index.html
-  app.get("/home", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+  app.get("/home", isAuthenticated, function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/home.html"));
   });
 
   // addexercise route loads addexercise.html
-  app.get("/addexercise", function(req, res) {
+  app.get("/addexercise", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/addexercise.html"));
   });
 
   // workouts route loads workouts.html
-  app.get("/workout", function(req, res) {
+  app.get("/workout", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/workouts.html"));
   });
 
   // workouts route loads workout-manager.html
-  app.get("/workouts", function(req, res) {
+  app.get("/workouts", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/workouts-manager.html"));
   });
 
   // workouts route loads workout-manager.html
-  app.get("/data", function(req, res) {
+  app.get("/data", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/data.html"));
   });
 
 };
-
