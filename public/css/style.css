@@ -2,47 +2,6 @@ body {
     background-color: #23262C;
 }
 
-.btn-success {
-    background-color: #19DE83;
-}
-
-.btn-success:hover {
-    background-color: #00A057;
-
-}
-
-.btn-primary {
-    background-color: #4A21FD;
-}
-
-.btn-secondary {
-    background-color: #9FA1A4;
-}
-
-th {
-    color: #CED4D9;
-}
-
-tr {
-    color: #CED4D9;
-}
-
-
-h1, h2, h3, h4, h5 {
-    color: #CED4D9;
-      font-family: "aktiv-grotesk";
-
-}
-
-
-p {
-    color: #CED4D9;
-}
-
-label {
-    color: #CED4D9;
-}
-
 button.submit {
     float: left;
 }
