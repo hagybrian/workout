@@ -1,7 +1,4 @@
-form.signup,
-form.login {
-  margin-top: 50px;
-}
+
 
 button.submit {
     float: left;
@@ -57,4 +54,8 @@ button.edit {
 
 .navbar {
     height: 50px;
+}
+form.signup,
+form.login {
+  margin-top: 50px;
 }
