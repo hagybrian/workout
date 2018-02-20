@@ -1,5 +1,28 @@
-body {
+.container {
     background-color: #23262C;
+}
+
+body {
+    background-color: #16161C;
+    font-family: "aktiv-grotesk";
+}
+
+.btn {
+    border-radius: 0;
+    font-family: aktiv-grotesk-condensed, sans-serif;
+font-style: normal;
+font-weight: 200;
+}
+
+.card {
+    border-radius: 0;
+    background-color:rgba(0, 0, 0, 0.5);;
+    
+
+}
+
+.form-control {
+      border-radius: 0;
 }
 
 .btn-success {
@@ -19,8 +42,12 @@ body {
     background-color: #9FA1A4;
 }
 
+
+
 th {
     color: #CED4D9;
+    font-family: "aktiv-grotesk";
+    text-transform: uppercase;
 }
 
 tr {
@@ -31,7 +58,19 @@ tr {
 h1, h2, h3, h4, h5 {
     color: #CED4D9;
       font-family: "aktiv-grotesk";
+      text-transform: uppercase;
+      font-weight: 900;
 
+}
+
+h1 {
+    color: #936F72;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #A0A2A5;
 }
 
 

@@ -14,62 +14,68 @@
 ">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/ntg0pru.css">
-
 </head>
 
 <body>
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center top-30">
             <div class="col-md-8">
                 <div class="row">
-                    <div class="col-md-12 top-20">
-                        <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
+                    <div class="col-md-10">
+                        <h1>Hypertrophy</h1>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="/logout">Logout</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <form id="workout-form">
-                            <input placeholder=" Enter Workout Name" id="workout-name" type="text" />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Home</h2>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <button type="submit" class="btn btn-primary btn-block">Create Workout</button>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form id="workout-form">
+                                <input placeholder=" Enter Workout Name" id="workout-name" type="text" />
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary btn-block">Create Workout</button>
+                        </div>
+                        </form>
                     </div>
-                    </form>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 top-20">
-                        <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Choose Workout</button>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                <div class="workout-container">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Workout</th>
-                                                <th># of Exercises</th>
-                                                <th>New Exercise</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        </tbody>
-                                    </table>
+                    <div class="row">
+                        <div class="col-md-12 top-20">
+                            <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Choose Workout</button>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    <div class="workout-container">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Workout</th>
+                                                    <th># of Exercises</th>
+                                                    <th>New Exercise</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 top-20">
-                        <a class="btn btn-secondary btn-block" href="/workouts">Manage Workouts</a>
+                    <div class="row">
+                        <div class="col-md-12 top-20">
+                            <a class="btn btn-secondary btn-block" href="/workouts">Manage Workouts</a>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 top-20">
-                        <a class="btn btn-secondary btn-block" href="/data">View Data</a>
+                    <div class="row">
+                        <div class="col-md-12 top-20">
+                            <a class="btn btn-secondary btn-block" href="/data">View Data</a>
+                        </div>
                     </div>
-                </div>
+                
             </div>
         </div>
     </div>
