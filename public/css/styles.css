@@ -2,7 +2,7 @@
     background-color: #23262C;
     border-radius: 5px;
 }
-
+    
 body {
     background-color: #16161C;
     font-family: "aktiv-grotesk";
@@ -35,6 +35,7 @@ select {
     background-image: url("/images/background.jpg");
     background-color: #19DE83;
     border-left-width: 5px;
+    border
 }
 
 .btn-success:hover {

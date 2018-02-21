@@ -2,6 +2,7 @@ $(document).ready(function() {
     // Getting jQuery references to the post body, title, form, and workout select
     var bodyInput = $("#body");
     var titleInput = $("#title");
+    var sectionInput = $("#section");
     var sequenceInput = $("#sequence");
     var exerciseInput = $("#exercise");
     var setsInput = $("#sets");
@@ -43,6 +44,9 @@ $(document).ready(function() {
         }
         // Constructing a newPost object to hand to the database
         var newPost = {
+            section: sectionInput
+                .val()
+                .trim(),
             sequence: sequenceInput
                 .val()
                 .trim(),
@@ -103,6 +107,7 @@ $(document).ready(function() {
                 // If this post exists, prefill our cms forms with its data
                 // titleInput.val(data.title);
                 // bodyInput.val(data.body);
+                sectionInput.val(data.section);
                 sequenceInput.val(data.sequence);
                 exerciseInput.val(data.exercise);
                 setsInput.val(data.sets);
