@@ -163,6 +163,10 @@ form.login {
     margin-top: 50px;
 }
 
+.table td, th {
+   text-align: center;   
+}
+
 footer {
     padding-top: 100px;
 }

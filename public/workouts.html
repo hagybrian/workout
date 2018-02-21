@@ -10,13 +10,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
-        <link rel="stylesheet" href="https://use.typekit.net/ntg0pru.css">
-
+    <link rel="stylesheet" href="https://use.typekit.net/ntg0pru.css">
 </head>
 
 <body>
     <div class="container workouts">
-                <div class="row justify-content-center top-30 bottom-30">
+        <div class="row justify-content-center top-30 bottom-30">
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-10">
@@ -31,81 +30,29 @@
                         <h2>Home</h2>
                     </div>
                 </div>
-        <div class="row">
-            <div class="col-md-2 col-sm-2">
-                <a class="btn btn-primary" href="/addexercise">New Exercise</a>
-            </div>
-        </div>
-        <div class="row top-30">
-            <div class="col-md-2 col-sm-2">
-                <a class="btn btn-primary" href="/workouts">Choose workout</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 workouts-container">
-
-            </div>
-        </div>
-                <div class="row justify-content-center">
-            <div class="col-md-8 top-20">
-                <footer>
-                            <div class="row">
-            <div class="col-md-12">
-                <form id="addexercise">
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label for="category">Select workout:</label>
-                            <select class="form-control" id="workout">
-                            </select>
-                        </div>
-                        <br />
-                        <label for="sequence">Sequence:</label>
-                        <input placeholder="Enter Sequence" type="text" class="form-control" id="sequence">
-                        <br />
-                        <label for="exercise">Exercise:</label>
-                        <input placeholder="Enter Exercise" type="text" class="form-control" id="exercise">
-                        <br />
-                        <label for="sets">Sets:</label>
-                        <input placeholder="Enter Sets" class="form-control sets" type="number" id="sets"></input>
-                        <br />
-                        <label for="weight">Weight:</label>
-                        <input placeholder="Enter Weight" class="form-control" type="number" id="weight"></input>
-                        <br />
-                        <label for="reps">Reps:</label>
-                        <input placeholder="Enter Reps" class="form-control" type="number" id="reps"></input>
-                        <br />
-                        <label for="tempo">Tempo:</label>
-                        <input placeholder="Enter Tempo (XXXX)" class="form-control" id="tempo"></input>
-                        <br />
-                        <label for="rest">Rest:</label>
-                        <input placeholder="Enter Rest Period in Seconds" class="form-control" type="number" id="rest"></input>
-                        <br />
-                        <div class="row">
-                            <div class="col-md-4">
-                                <!-- <a class="btn btn-primary" href="/addexercise">Add Exercise</a> -->
-                                <button type="submit" class="btn btn-success add" href="/addexercise">Add Exercise</button>
-                            </div>
-                            <div class="col-md-4">
-                                <button type="submit" class="btn btn-success submit">Done</button>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2">
+                        <a class="btn btn-primary" href="/addexercise">New Exercise</a>
                     </div>
-                </form>
+                </div>
+                <div class="row top-30">
+                    <div class="col-md-2 col-sm-2">
+                        <a class="btn btn-primary" href="/workouts">Choose workout</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 workouts-container">
+                    </div>
+                </div>
+</div>
             </div>
         </div>
-                </footer>
-            </div>
-        </div>
-    </div>
-
-    <!-- Custom Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
-
-    <script src='https://unpkg.com/react/umd/react.development.js'></script>
-    <script src='https://unpkg.com/react-dom/umd/react-dom.development.js'></script>
-    <script src="js/workouts.js" type="text/javascript"></script>
-
-    <script src="js/index.js"></script>
+            <!-- Custom Script -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
+            <script src='https://unpkg.com/react/umd/react.development.js'></script>
+            <script src='https://unpkg.com/react-dom/umd/react-dom.development.js'></script>
+            <script src="js/workouts.js" type="text/javascript"></script>
+            <script src="js/index.js"></script>
 </body>
 
 </html>

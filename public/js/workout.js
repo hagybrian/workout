@@ -54,7 +54,7 @@ $(document).ready(function() {
         newTr.data("workout", workoutData);
         newTr.append("<td>" + workoutData.name + "</td>");
         newTr.append("<td> " + workoutData.Posts.length + "</td>");
-        newTr.append("<td><a href='/workout?workout_id=" + workoutData.id + "'>Go to Workout</a></td>");
+        newTr.append("<td><a href='/workout?workout_id=" + workoutData.id + "'>Enter Phase</a></td>");
         newTr.append("<td><a href='/addexercise?workout_id=" + workoutData.id + "'>Create Exercise</a></td>");
         newTr.append("<td><a style='cursor:pointer;color:red' class='delete-workout'>Delete</a></td>");
         return newTr;
