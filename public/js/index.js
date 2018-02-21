@@ -98,4 +98,4 @@ var Button = function Button(props) {
     return React.createElement('button', _extends({ type: 'button' }, props, { className: "btn " + props.className }));
 };
 
-ReactDOM.render(React.createElement(Stopwatch, null), document.getElementById('container'));
+ReactDOM.render(React.createElement(Stopwatch, null), document.getElementsByClassName('timer'));

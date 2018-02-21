@@ -1,37 +1,44 @@
 .container {
     background-color: #23262C;
+    border-radius: 5px;
 }
 
 body {
     background-color: #16161C;
     font-family: "aktiv-grotesk";
+    background-image: url("/images/background.jpg");
 }
 
 .btn {
     border-radius: 0;
     font-family: aktiv-grotesk-condensed, sans-serif;
-font-style: normal;
-font-weight: 200;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
 }
 
 .card {
     border-radius: 0;
-    background-color:rgba(0, 0, 0, 0.5);;
-    
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+select {
+    border-radius: 0;
 }
 
 .form-control {
-      border-radius: 0;
+    border-radius: 0;
 }
 
 .btn-success {
+    background-image: url("/images/background.jpg");
     background-color: #19DE83;
+    border-left-width: 5px;
 }
 
 .btn-success:hover {
     background-color: #00A057;
-
 }
 
 .btn-primary {
@@ -39,6 +46,9 @@ font-weight: 200;
 }
 
 .btn-secondary {
+    background-image: url("/images/background.jpg");
+    background-color: #19DE83;
+    border-left-width: 5px;
     background-color: #9FA1A4;
 }
 
@@ -55,12 +65,15 @@ tr {
 }
 
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: #CED4D9;
-      font-family: "aktiv-grotesk";
-      text-transform: uppercase;
-      font-weight: 900;
-
+    font-family: "aktiv-grotesk";
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 h1 {
@@ -68,6 +81,8 @@ h1 {
 }
 
 h2 {
+    font-family: "aktiv-grotesk-thin";
+    letter-spacing: .2rem;
     font-weight: 100;
     font-size: 1.5rem;
     color: #A0A2A5;
@@ -134,10 +149,19 @@ button.edit {
     margin-top: 20px;
 }
 
+.bottom-30 {
+    margin-bottom: 30px;
+}
+
 .navbar {
     height: 50px;
 }
+
 form.signup,
 form.login {
-  margin-top: 50px;
+    margin-top: 50px;
+}
+
+footer {
+    padding-top: 100px;
 }

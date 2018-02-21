@@ -80,30 +80,54 @@ $(document).ready(function() {
         var newPostDate = $("<small>");
         var newPostworkout = $("<h5>");
         newPostworkout.text(post.workout.name);
-        var newPostexercise = $("<h3>");
+        var newPostexercise = $("<h2>");
         newPostexercise.text(post.exercise);
         console.log(post.exercise);
         var newPostPanelBody = $("<div>");
         newPostPanelBody.addClass("panel-body");
         var newPostBody = $("<p>");
-        newPostSequence.text(post.sequence + " ");
+        newPostSequence.text(post.sequence + " - " + post.exercise);
         newPostBody.text(post.body);
+
+        var newPostSets = $("<p>");
+        newPostSets.text("Sets: " + post.sets);
+
+
+
+        var newPostWeight = $("<p>");
+        newPostWeight.text("Weight: " + post.weight);
+
+        var newPostReps = $("<p>");
+        newPostReps.text("Reps: " + post.reps);
+
+        var newPostTempo = $("<p>");
+        newPostTempo.text("Tempo: " + post.tempo);
+
+        var newPostRest = $("<p>");
+        newPostRest.text("Rest: " + post.rest);
+
+        var newPostTimer = $("<div>");
+        newPostTimer.addClass("timer");
+
+
         // newPostDate.text(formattedDate);
         // newPostSequence.append(newPostDate);
         newPostPanelHeading.append(deleteBtn);
         newPostPanelHeading.append(editBtn);
-        newPostPanelHeading.append(newPostSequence);
         newPostPanelHeading.append(newPostworkout);
-        newPostPanelHeading.append(newPostexercise);
+        newPostPanelHeading.append(newPostSequence);
+        // newPostPanelHeading.append(newPostexercise);
+
         newPostPanelBody.append(newPostBody);
         newPostPanel.append(newPostPanelHeading);
         newPostPanel.append(newPostPanelBody);
         newPostPanel.data("post", post);
-        newPostPanelBody.append(post.sets);
-        newPostPanelBody.append(post.weight);
-        newPostPanelBody.append(post.reps);
-        newPostPanelBody.append(post.tempo);
-        newPostPanelBody.append(post.rest);
+        newPostPanelBody.append(newPostSets);
+        newPostPanelBody.append(newPostWeight);
+        newPostPanelBody.append(newPostReps);
+        newPostPanelBody.append(newPostTempo);
+        newPostPanelBody.append(newPostRest);
+        newPostPanelBody.append(newPostTimer);
 
 
 
