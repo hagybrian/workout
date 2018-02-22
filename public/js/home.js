@@ -55,7 +55,7 @@ $(document).ready(function() {
         newTr.append("<td><a href='/workout?workout_id=" + workoutData.id + "'>" + workoutData.name + "</a></td>");
         newTr.append("<td> " + workoutData.Posts.length + "</td>");
         // newTr.append("<td><a href='/workout?workout_id=" + workoutData.id + "'>" + workoutData.name + "</a></td>");
-        newTr.append("<td><a href='/addexercise?workout_id=" + workoutData.id + "'>Add Exercise</a></td>");
+        newTr.append("<td><a href='/addexercise?workout_id=" + workoutData.id + "'>START</a></td>");
         // newTr.append("<td><a style='cursor:pointer;color:red' class='delete-workout'>Delete workout</a></td>");
         return newTr;
     }
