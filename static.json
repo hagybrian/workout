@@ -1,0 +1,6 @@
+{
+	"root": "workout/",
+	"routes": {
+		"/**":"index.html"
+	}
+}
