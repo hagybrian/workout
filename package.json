@@ -20,7 +20,9 @@
     "pg": "7.4.1",
     "sequelize": "^4.3.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "barba.js": "^1.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hagybrian/workout.git"
