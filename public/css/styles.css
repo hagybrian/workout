@@ -2,16 +2,22 @@
     background-color: #23262C;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+}
 
+.container-workout {
+    background-color: #343B49;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .timer-container {
-    background-color: #3173A8;
+    background-color: #343B49;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-
 }
-    
+
 body {
     background-color: #16161C;
     font-family: "aktiv-grotesk";
@@ -30,13 +36,13 @@ body {
 .card {
     border-radius: 0;
     background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn.focus,
 .btn:focus {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 select {
@@ -179,20 +185,31 @@ form.login {
     margin-top: 50px;
 }
 
-.table td, th {
-   text-align: center;   
+.table td,
+th {
+    text-align: center;
 }
 
 footer {
     padding-top: 100px;
 }
 
-  .fixed-right {
+.fixed-right {
     position: fixed;
     top: 45%;
     right: 0%;
     z-index: 9999 !important;
-  }
+}
+
+.workout-table {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "aktiv-grotesk-thin";
+    letter-spacing: .1rem;
+}
+
 
 /*label { 
 writing-mode: tb-rl; 
@@ -211,5 +228,3 @@ writing-mode: tb-rl;
 
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }*/
-
-

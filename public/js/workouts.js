@@ -67,7 +67,7 @@ $(document).ready(function() {
         var formattedDate = $(post.createdAt);
         formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
         var newPostPanel = $("<div>");
-        newPostPanel.addClass("panel panel-default");
+        newPostPanel.addClass("panel panel-default container-workout");
         var newPostPanelHeading = $("<div>");
         newPostPanelHeading.addClass("panel-heading");
         var deleteBtn = $("<button>");
@@ -89,21 +89,27 @@ $(document).ready(function() {
         newPostSequence.text(post.sequence + " - " + post.exercise);
         newPostBody.text(post.body);
 
-        var newPostSets = $("<p>");
+        var newPostSets = $("<th>");
+        newPostSets.addClass("workout-table");
+
         newPostSets.text("Sets: " + post.sets);
 
 
 
-        var newPostWeight = $("<p>");
+        var newPostWeight = $("<th>");
+        newPostWeight.addClass("workout-table");
         newPostWeight.text("Weight: " + post.weight);
 
-        var newPostReps = $("<p>");
+        var newPostReps = $("<th>");
+        newPostReps.addClass("workout-table");
         newPostReps.text("Reps: " + post.reps);
 
-        var newPostTempo = $("<p>");
+        var newPostTempo = $("<th>");
+        newPostTempo.addClass("workout-table");
         newPostTempo.text("Tempo: " + post.tempo);
 
-        var newPostRest = $("<p>");
+        var newPostRest = $("<th>");
+        newPostRest.addClass("workout-table");
         newPostRest.text("Rest: " + post.rest);
 
         var newPostTimer = $("<div>");
