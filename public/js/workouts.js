@@ -79,7 +79,7 @@ $(document).ready(function() {
         editBtn.text("EDIT");
         editBtn.addClass("edit btn btn-info");
         var newPostSequence = $("<h2>");
-        var newPostDate = $("<h6>");
+        // var newPostDate = $("<h6>");
 
         var newPostworkout = $("<h5>");
         newPostworkout.text(post.workout.name);
@@ -119,8 +119,8 @@ $(document).ready(function() {
         newPostTimer.addClass("timer");
 
 
-        newPostDate.text(formattedDate);
-        newPostSequence.append(newPostDate);
+        // newPostDate.text(formattedDate);
+        // newPostSequence.append(newPostDate);
         newPostPanelHeading.append(deleteBtn);
         newPostPanelHeading.append(editBtn);
         newPostPanelHeading.append(newPostworkout);

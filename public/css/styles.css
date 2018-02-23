@@ -14,11 +14,13 @@
 
 .container-workout h2 {
     color: #936F72;
+    border-bottom: 1px solid #936F72;
+    margin-top: 10px;
 }
 
 .container-workout h6 {
     color: #936F72;
-    border-bottom: 1px solid #936F72;
+
     padding: 3px 0;
     margin-top: 5px;
 }
@@ -234,26 +236,3 @@ footer {
     font-family: "aktiv-grotesk-thin";
     letter-spacing: .1rem;
 }
-
-
-
-
-
-
-/*label { 
-writing-mode: tb-rl; 
-
--webkit-transform: rotate(45deg);
-
-
--moz-transform: rotate(45deg);
-
-
--ms-transform: rotate(45deg);
-
-
--o-transform: rotate(45deg);
-
-
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}*/
