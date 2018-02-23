@@ -84,7 +84,7 @@ $(document).ready(function() {
     // Submits a new post and brings user to workouts page upon completion
     function submitPost(post) {
         $.post("/api/posts", post, function() {
-            window.location.href = "/workouts";
+            window.location.href = "/addexercise";
         });
     }
 
