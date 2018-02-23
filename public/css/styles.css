@@ -8,8 +8,14 @@
     background-color: #343B49;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px;
+    padding: 20px;
+
     margin-bottom: 20px;
+}
+
+.container-workout h2 {
+    color: #936F72;
+    border-bottom: 1px solid #936F72;
 }
 
 .timer-container {
