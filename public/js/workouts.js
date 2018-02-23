@@ -7,7 +7,7 @@ $(document).ready(function() {
     // Click events for the edit and delete buttons
     $(document).on("click", "button.delete", handlePostDelete);
     $(document).on("click", "button.edit", handlePostEdit);
-    // Variable to hold our posts
+
     var posts;
 
     // The code below handles the case where we want to get workouts posts for a specific workout
@@ -73,14 +73,11 @@ $(document).ready(function() {
         newPostPanelHeading.addClass("panel-heading");
         var deleteBtn = $("<button>");
         deleteBtn.text("x");
-
         deleteBtn.addClass("delete btn btn-danger");
         var editBtn = $("<button>");
         editBtn.text("EDIT");
         editBtn.addClass("edit btn btn-info");
         var newPostSequence = $("<h2>");
-        // var newPostDate = $("<h6>");
-
         var newPostworkout = $("<h5>");
         newPostworkout.text(post.workout.name);
         var newPostexercise = $("<h2>");
@@ -91,42 +88,28 @@ $(document).ready(function() {
         var newPostBody = $("<p>");
         newPostSequence.text(post.sequence + " - " + post.exercise);
         newPostBody.text(post.body);
-
         var newPostSets = $("<th>");
         newPostSets.addClass("workout-table");
-
         newPostSets.text("Sets: " + post.sets);
-
-
-
         var newPostWeight = $("<th>");
         newPostWeight.addClass("workout-table");
         newPostWeight.text("Weight: " + post.weight);
-
         var newPostReps = $("<th>");
         newPostReps.addClass("workout-table");
         newPostReps.text("Reps: " + post.reps);
-
         var newPostTempo = $("<th>");
         newPostTempo.addClass("workout-table");
         newPostTempo.text("Tempo: " + post.tempo);
-
         var newPostRest = $("<th>");
         newPostRest.addClass("workout-table");
         newPostRest.text("Rest: " + post.rest);
-
         var newPostTimer = $("<div>");
         newPostTimer.addClass("timer");
 
-
-        // newPostDate.text(formattedDate);
-        // newPostSequence.append(newPostDate);
         newPostPanelHeading.append(deleteBtn);
         newPostPanelHeading.append(editBtn);
         newPostPanelHeading.append(newPostworkout);
         newPostPanelHeading.append(newPostSequence);
-        // newPostPanelHeading.append(newPostexercise);
-
         newPostPanelBody.append(newPostBody);
         newPostPanel.append(newPostPanelHeading);
         newPostPanel.append(newPostPanelBody);

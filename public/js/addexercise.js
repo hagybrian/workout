@@ -103,7 +103,6 @@ $(document).ready(function() {
         }
         $.get(queryUrl, function(data) {
             if (data) {
-                console.log(data.workoutId || data.id);
                 // If this post exists, prefill our cms forms with its data
                 // titleInput.val(data.title);
                 // bodyInput.val(data.body);

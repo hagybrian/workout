@@ -3,8 +3,7 @@ $(document).ready(function() {
     var nameInput = $("#workout-name");
     var workoutList = $("tbody");
     var workoutContainer = $(".workout-container");
-    // Adding event listeners to the form to create a new object, and the button to delete
-    // an workout
+
     $(document).on("submit", "#workout-form", handleworkoutFormSubmit);
     $(document).on("add", "#workout-form", handleworkoutFormAdd);
     // $(document).on("click", ".delete-workout", handleDeleteButtonPress);
@@ -56,7 +55,6 @@ $(document).ready(function() {
         newTr.append("<td> " + workoutData.Posts.length + "</td>");
         // newTr.append("<td><a href='/workout?workout_id=" + workoutData.id + "'>" + workoutData.name + "</a></td>");
         newTr.append("<td><a href='/addexercise?workout_id=" + workoutData.id + "'>START</a></td>");
-        // newTr.append("<td><a style='cursor:pointer;color:red' class='delete-workout'>Delete workout</a></td>");
         return newTr;
     }
 
@@ -90,15 +88,4 @@ $(document).ready(function() {
         alertDiv.text("You must create an workout before you can create an exercise.");
         workoutContainer.append(alertDiv);
     }
-
-    // Function for handling what happens when the delete button is pressed
-    // function handleDeleteButtonPress() {
-    //   var listItemData = $(this).parent("td").parent("tr").data("workout");
-    //   var id = listItemData.id;
-    //   $.ajax({
-    //     method: "DELETE",
-    //     url: "/api/workouts/" + id
-    //   })
-    //   .done(getworkouts);
-    // }
 });

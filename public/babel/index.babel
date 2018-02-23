@@ -78,14 +78,7 @@ class Stopwatch extends React.Component {
   }
 }
 
-/** verbose component before 0.14
-class Button extends React.Component {
-  render() {
-    return <button type="button" {...this.props}
-                   className={"btn " + this.props.className } />;
-  }
-}
-*/
+
 
 const Button = (props) =>
   <button type="button" {...props} className={"btn " + props.className } />;

@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.text());
 
 app.use(express.static("public"));
-// We need to use sessions to keep track of our user's login status
+// Sessions
 app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
