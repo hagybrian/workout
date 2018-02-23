@@ -62,22 +62,25 @@ $(document).ready(function() {
         workoutsContainer.append(postsToAdd);
     }
 
-    // This function constructs a post's HTML
+    // This function constructs a workout's HTML
     function createNewRow(post) {
         var formattedDate = $(post.createdAt);
-        formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
+        formattedDate = moment(formattedDate).format("MMMM D YYYY, h:mm a");
+
         var newPostPanel = $("<div>");
         newPostPanel.addClass("panel panel-default container-workout");
         var newPostPanelHeading = $("<div>");
         newPostPanelHeading.addClass("panel-heading");
         var deleteBtn = $("<button>");
         deleteBtn.text("x");
+
         deleteBtn.addClass("delete btn btn-danger");
         var editBtn = $("<button>");
         editBtn.text("EDIT");
         editBtn.addClass("edit btn btn-info");
         var newPostSequence = $("<h2>");
-        var newPostDate = $("<small>");
+        var newPostDate = $("<h6>");
+
         var newPostworkout = $("<h5>");
         newPostworkout.text(post.workout.name);
         var newPostexercise = $("<h2>");
@@ -116,8 +119,8 @@ $(document).ready(function() {
         newPostTimer.addClass("timer");
 
 
-        // newPostDate.text(formattedDate);
-        // newPostSequence.append(newPostDate);
+        newPostDate.text(formattedDate);
+        newPostSequence.append(newPostDate);
         newPostPanelHeading.append(deleteBtn);
         newPostPanelHeading.append(editBtn);
         newPostPanelHeading.append(newPostworkout);
