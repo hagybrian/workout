@@ -21,7 +21,7 @@ var Stopwatch = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Stopwatch.__proto__ || Object.getPrototypeOf(Stopwatch)).call(this, props));
 
     _this.state = {
-      secondsElapsed: 60,
+      secondsElapsed: 0,
       laps: [],
       lastClearedIncrementer: null
     };
@@ -36,7 +36,7 @@ var Stopwatch = function (_React$Component) {
 
       this.incrementer = setInterval(function () {
         return _this2.setState({
-          secondsElapsed: _this2.state.secondsElapsed - 1
+          secondsElapsed: _this2.state.secondsElapsed + 1
         });
       }, 1000);
     }

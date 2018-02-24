@@ -112,7 +112,6 @@ $(document).ready(function() {
         newPostPanelHeading.append(editBtn);
         newPostPanelHeading.append(newPostworkout);
         newPostPanelHeading.append(newPostSequence);
-
         newPostPanelBody.append(newPostBody);
         newPostPanel.append(newPostPanelHeading);
         newPostPanel.append(newPostPanelBody);
