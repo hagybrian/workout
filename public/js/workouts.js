@@ -72,7 +72,7 @@ $(document).ready(function() {
         var newPostPanelHeading = $("<div>");
         newPostPanelHeading.addClass("panel-heading");
         var deleteBtn = $("<button>");
-        deleteBtn.text("x");
+        deleteBtn.text("Delete");
         deleteBtn.addClass("delete btn btn-danger");
         var editBtn = $("<button>");
         editBtn.text("EDIT");

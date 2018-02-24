@@ -92,21 +92,25 @@ select {
 }
 
 .btn-danger {
-    background-color: #FC3F4A;
+    color: #FC3F4A;
+    background-color: #343B49;
+    border: none;
 }
 
 .btn-danger:hover {
-    background-color: #FC3F4A;
-    border-color: #CED4D9;
+    background-color: #343B49;
+    border-color: #343B49;
 }
 
 .btn-info {
-    background-color: #4F99F0;
+    color: #4F99F0;
+    background-color: #343B49;
+    border: none;
 }
 
 .btn-info:hover {
-    background-color: #0D6BDB;
-    border-color: #CED4D9;
+    background-color: #343B49;
+    border: none;
 }
 
 .start-btn {
