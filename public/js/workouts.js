@@ -79,7 +79,9 @@ $(document).ready(function() {
         editBtn.addClass("edit btn btn-info");
         var newPostSequence = $("<h2>");
         var newPostworkout = $("<h5>");
-        newPostworkout.text(post.workout.name);
+        newPostworkout.text(post.workout.name + ": " + post.section);
+        var newPostSection = $("<h5>");
+        newPostSection.text(post.section);
         var newPostexercise = $("<h2>");
         newPostexercise.text(post.exercise);
         console.log(post.exercise);
@@ -110,6 +112,7 @@ $(document).ready(function() {
         newPostPanelHeading.append(editBtn);
         newPostPanelHeading.append(newPostworkout);
         newPostPanelHeading.append(newPostSequence);
+
         newPostPanelBody.append(newPostBody);
         newPostPanel.append(newPostPanelHeading);
         newPostPanel.append(newPostPanelBody);

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // Getting jQuery references to the post body, title, form, and workout select
     var bodyInput = $("#body");
     var titleInput = $("#title");
     var sectionInput = $("#section");
@@ -14,7 +13,6 @@ $(document).ready(function() {
     var workoutselect = $("#workout");
     // Adding an event listener for when the form is submitted
     $(addexerciseForm).on("submit", handleFormSubmit);
-    // Gets the part of the url that comes after the "?" (which we have if we're updating a post)
     var url = window.location.search;
     var postId;
     var workoutId;
