@@ -53,7 +53,7 @@ var Stopwatch = function (_React$Component) {
     value: function handleResetClick() {
       clearInterval(this.incrementer);
       this.setState({
-        secondsElapsed: 60,
+        secondsElapsed: 0,
         laps: []
       });
     }
