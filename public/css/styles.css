@@ -286,3 +286,7 @@ footer {
     font-family: "aktiv-grotesk-thin";
     letter-spacing: .1rem;
 }
+
+.navbar {
+    padding: .5rem 0;
+}
