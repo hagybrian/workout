@@ -179,6 +179,8 @@ h5 {
 
 h1 {
     color: #FC3F4A;
+    text-transform: none;
+    font-size: 2rem;
 }
 
 h2 {
@@ -290,3 +292,4 @@ footer {
 .navbar {
     padding: .5rem 0;
 }
+

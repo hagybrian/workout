@@ -5,26 +5,65 @@
     <meta charset="UTF-8">
     <title>Work Out: Data</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/chart.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/ntg0pru.css">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
 </head>
 
 <body>
     <div class="container">
         <nav class="navbar">
         </nav>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
+        <div class="row justify-content-center bottom-30">
+            <div class="col-md-8">
                 <div class="row">
-                    <div class="col-md-8">
-                        <p>totally tubular</p>
+                    <div class="col-md-12">
+                        <nav class="navbar">
+                            <h1>func(Hypertrophy)</h1>
+                            <div class="row">
+                                <ul class="nav nav-item">
+                                    <li class="nav justify-content-end">
+                                        <a class="nav-link" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="/addexercise">Start Exercise</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/workouts">Manage</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/data">Data</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link active" href="/logout">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row bottom-30">
+                    <div class="col-md-6">
+                        <h2>Completed Exercises</h2>
                     </div>
                 </div>
             </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
+
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="chart_div"></div>
+                        <div id="linechart_material" style="width: 100%; height: 500px;"></div>
+                    </div>
+                </div>
+            </div>
             <script src="js/workouts.js" type="text/javascript"></script>
 </body>
 
