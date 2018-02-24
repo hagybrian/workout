@@ -1,10 +1,13 @@
-# Project Title
+# functional(Hypertrphy)
 
-One Paragraph of project description goes here
+Functional Hypertrophy in fitness is a blend of training for strength and size. functional(Hypertrphy) is a weightlifting tracking app where users record their progress in Phases by body section (Chest & Back, Legs, and Arms). Every weight, rep, and tempo is recorded so users can view historical data to ensure every body section is worked out evenly to prevent major strength differences by body section. 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+To view the live demo go to: http://evening-journey-52693.herokuapp.com/login
+
+Use username: test@test.com
+PW: test
 
 ### Prerequisites
 

@@ -104,8 +104,8 @@ function drawChart() {
 
     var options = {
         chart: {
-            title: 'Box Office Earnings in First Two Weeks of Opening',
-            subtitle: 'in millions of dollars (USD)',
+            title: 'Workouts Performed by Body Section in Phase 1',
+            subtitle: 'In Repetitions',
             
         },
         backgroundColor: '#23262C',
